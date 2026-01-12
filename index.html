@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SFE Challenge 2025</title>
+  <meta name="description" content="The Science for Everyone (SFE) Challenge invites students and researchers to solve real-world scientific problems using open data and AI." />
+  <style>
+    /* ===== 基础重置与全局样式 ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fafafa;
+    }
+    header {
+      background: linear-gradient(135deg, #1e5799, #207cca);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0.8rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #207cca;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav a:hover, nav a.active {
+      background: #eef5ff;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #1e5799;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .timeline-item {
+      display: flex;
+      gap: 1rem;
+    }
+    .timeline-date {
+      min-width: 120px;
+      font-weight: bold;
+      color: #207cca;
+    }
+    .tracks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .track-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .track-card h3 {
+      color: #1e5799;
+      margin-bottom: 0.6rem;
+    }
+    .organizers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .org-item {
+      text-align: center;
+      max-width: 150px;
+    }
+    .org-logo {
+      width: 100px;
+      height: 100px;
+      background: #eee;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 0.8rem;
+      font-weight: bold;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #eee;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav ul { flex-direction: column; align-items: center; }
+      nav a { margin: 0.2rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Science for Everyone (SFE) Challenge 2025</h1>
+    <p>Open Science · Open Data · Global Collaboration</p>
+  </header>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#tracks">Competition Tracks</a></li>
+      <li><a href="#organizers">Organizers</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Introduction -->
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>
+        The <strong>Science for Everyone (SFE) Challenge 2025</strong> is a global competition that empowers students, researchers, and citizen scientists to tackle pressing scientific questions using open datasets and modern computational tools.
+      </p>
+      <p>
+        This year’s theme focuses on <em>“Democratizing Scientific Discovery through Open Data and AI”</em>. Participants will work on real-world problems in climate science, biomedical research, and sustainable development — all using publicly available data.
+      </p>
+      <p>
+        Join thousands of innovators worldwide to build solutions that are reproducible, transparent, and impactful.
+      </p>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline">
+      <h2>Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">January 15, 2025</div>
+          <div>Competition launch & dataset release</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">March 1, 2025</div>
+          <div>Deadline for team registration</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">April 15, 2025</div>
+          <div>Submission deadline</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">May 10, 2025</div>
+          <div>Finalists announced</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">June 5, 2025</div>
+          <div>Awards ceremony at Open Science Summit</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competition Tracks -->
+    <section id="tracks">
+      <h2>Competition Tracks</h2>
+      <div class="tracks-grid">
+        <div class="track-card">
+          <h3>🌍 Climate Insights</h3>
+          <p>Analyze satellite and ground-based climate data to predict regional drought risks or carbon sequestration potential.</p>
+        </div>
+        <div class="track-card">
+          <h3>🧬 Biomedical Discovery</h3>
+          <p>Use open genomic and clinical datasets to identify biomarkers for early disease detection.</p>
+        </div>
+        <div class="track-card">
+          <h3>🏙️ Urban Sustainability</h3>
+          <p>Leverage city-level open data to optimize energy use, waste management, or public transport efficiency.</p>
+        </div>
+        <div class="track-card">
+          <h3>🔬 Open Methodology</h3>
+          <p>Develop novel, reproducible workflows for scientific analysis using Jupyter, R Markdown, or Quarto.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Organizers -->
+    <section id="organizers">
+      <h2>Organizers</h2>
+      <div class="organizers">
+        <div class="org-item">
+          <div class="org-logo">IS</div>
+          <div>InternScience Foundation</div>
+        </div>
+        <div class="org-item">
+          <div class="org-logo">OS</div>
+          <div>Open Science Alliance</div>
+        </div>
+        <div class="org-item">
+          <div class="org-logo">UN</div>
+          <div>UN Sustainable Dev. Network</div>
+        </div>
+        <div class="org-item">
+          <div class="org-logo">HF</div>
+          <div>Hugging Face Research</div>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 1.5rem;">
+        In partnership with universities and open-data initiatives worldwide.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Science for Everyone Challenge. All rights reserved.</p>
+    <p>
+      Questions? Contact us at <a href="mailto:challenge@internscience.org">challenge@internscience.org</a>
+    </p>
+  </footer>
+
+  <script>
+    // 简单的导航高亮（可选）
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // 页面加载时根据 URL hash 高亮
+    window.addEventListener('load', () => {
+      const hash = window.location.hash;
+      if (hash) {
+        document.querySelector(`nav a[href="${hash}"]`)?.classList.add('active');
+      } else {
+        document.querySelector('nav a')?.classList.add('active');
+      }
+    });
+  </script>
+
+</body>
+</html>
