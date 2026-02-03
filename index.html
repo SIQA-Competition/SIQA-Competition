@@ -198,6 +198,7 @@
       <li><a href="#tracks" style="text-decoration: none; color: #333; font-weight: 500;">Tracks</a></li>
       <li><a href="#timeline" style="text-decoration: none; color: #333; font-weight: 500;">Timeline</a></li>
       <li><a href="#organizers" style="text-decoration: none; color: #333; font-weight: 500;">Organizers</a></li>
+      <li><a href="#datavisual" style="text-decoration: none; color: #333; font-weight: 500;">DataSet</a></li>
       <li><a href="#advisory" style="text-decoration: none; color: #333; font-weight: 500;">Advisory Committee</a></li>
     </ul>
   </div>
@@ -205,7 +206,7 @@
 
   <main>
     <!-- Introduction -->
-    <section id="introduction">
+<section id="introduction">
       <h2>Introduction</h2>
       <p>
         Multimodal large language models (MLLMs) are revolutionizing image quality assessment (IQA) by bringing semantic understanding and world knowledge into evaluation. Yet nearly all existing IQA benchmarks ignore scientific imagery, a cornerstone of research, education, and discovery.
@@ -220,11 +221,11 @@
       <p>
         To address this gap, the <strong>SIQA Challenge</strong> introduces two tasks that push models beyond pixels—to evaluate scientific integrity through visual reasoning and domain-aware judgment.
       </p>
-             <img src="./imgs/Introduction.png" alt="Task Example" style="display: block; margin: 1.5rem auto; width: 50%; height: auto; border-radius: 6px;">
+             <img src="./imgs/Introduction.svg" alt="Task Example" style="display: block; margin: 1.5rem auto; width: 50%; height: auto; border-radius: 6px;">
     </section>
 
     <!-- Challenge Tasks -->
-    <section id="tracks">
+<section id="tracks">
       <h2>Challenge Tasks</h2>
 
       <div class="tracks-grid">
@@ -263,8 +264,58 @@
           </p>
         </div>
       </div>
-             <img src="./imgs/Task.png" alt="Task Example" style="display: block; margin: 1.5rem auto; width: 80%; height: auto; border-radius: 6px;">
+             <img src="./imgs/SpotLight.svg" alt="Task Example" style="display: block; margin: 1.5rem auto; width: 80%; height: auto; border-radius: 6px;">
     </section>
+
+<section id="datavisual">
+  <h2>📊 Dataset Overview</h2>
+
+  <div style="text-align: center; margin: 1rem 0;">
+    <p style="color: #555; font-size: 1rem; max-width: 800px; margin: 0 auto 1.5rem; line-height: 1.6;">
+      The SIQA dataset is built around two complementary tasks:
+      <strong>SIQA-U</strong> for structured reasoning and <strong>SIQA-S</strong> for continuous quality scoring.
+      These are grounded in four scientific dimensions and two orthogonal evaluation axes.
+    </p>
+  </div>
+
+  <!-- 图片 -->
+  <img src="./imgs/DataVisual.svg" alt="SIQA Dataset Overview"
+       style="display: block; margin: 0 auto 1.5rem; width: 90%; height: auto; border-radius: 6px;">
+
+  <!-- 分析说明 -->
+  <div style="max-width: 800px; margin: 0 auto; padding: 1rem; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+    <h3 style="color: #2c3e50; margin-top: 0;">🔍 Key Design Principles</h3>
+
+    <div style="margin: 1rem 0; padding-left: 1.5rem; position: relative;">
+      <div style="position: absolute; left: 0; top: 0; width: 12px; height: 100%; background-color: #3498db;"></div>
+      <h4 style="margin: 0 0 0.5rem 0; color: #3498db;">1. SIQA-U: 4 Dimensions × 3 Question Types</h4>
+      <p style="color: #555; margin: 0.5rem 0;">
+        Each image is evaluated through three question types across four scientific dimensions:
+      </p>
+      <ul style="padding-left: 1.2rem; margin: 0.5rem 0; color: #555;">
+        <li><strong>Yes/No:</strong> Binary verification of factual correctness (e.g., "Does this diagram show a correct bond?")</li>
+        <li><strong>What:</strong> Multiple-choice comprehension of scientific elements (e.g., "Which labeling violates convention?")</li>
+        <li><strong>How:</strong> Qualitative judgment on completeness, clarity, and disciplinary alignment.</li>
+      </ul>
+    </div>
+
+    <div style="margin: 1rem 0; padding-left: 1.5rem; position: relative;">
+      <div style="position: absolute; left: 0; top: 0; width: 12px; height: 100%; background-color: #e74c3c;"></div>
+      <h4 style="margin: 0 0 0.5rem 0; color: #e74c3c;">2. SIQA-S: Perception vs. Knowledge — Orthogonal Evaluation Axes</h4>
+      <p style="color: #555; margin: 0.5rem 0;">
+        SIQA-S scores images along two <em>orthogonal</em> dimensions:
+      </p>
+      <ul style="padding-left: 1.2rem; margin: 0.5rem 0; color: #555;">
+        <li><strong>Knowledge-Driven:</strong> Factual correctness (validity, completeness) — does the image convey accurate science?</li>
+        <li><strong>Perception-Driven:</strong> Cognitive clarity (clarity, conformity) — is it easy to understand and follow domain conventions?</li>
+      </ul>
+      <p style="color: #555; margin: 0.5rem 0; font-style: italic;">
+        This design enables models to be evaluated on both <em>what they know</em> and <em>how well they communicate it</em>.
+      </p>
+    </div>
+  </div>
+</section>
+
 
     <!-- Timeline -->
 <section id="timeline">
@@ -320,7 +371,7 @@
 </section>
 
     <!-- Organizers -->
-    <section id="organizers">
+<section id="organizers">
       <h2>Organizers</h2>
       <div class="organizers">
         <div class="org-item">
@@ -379,7 +430,7 @@
     </section>
 
     <!-- Advisory Committee (same style as Organizers) -->
-    <section id="advisory">
+<section id="advisory">
       <h2>Advisory Committee</h2>
       <div class="organizers">
         <div class="org-item">
